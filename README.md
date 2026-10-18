@@ -181,8 +181,3 @@ La revisión es de accesibilidad básica; no sustituye una auditoría integral c
 - **Botones fuera de vista en horizontal:** desplazar el formulario. En el emulador, mantener pulsado el mouse y arrastrar hacia arriba o usar la rueda.
 - **No recuerda credenciales:** crear otra cuenta de prueba con un correo distinto. El proyecto no incluye recuperación de contraseña ni permite leer la contraseña original desde el hash.
 
-## Entrega académica
-
-El código puede entregarse mediante repositorio o ZIP. Incluir el Gradle Wrapper, fuentes, recursos, configuración de compilación, esquemas Room y este README. Excluir todas las carpetas `build/`, `.gradle/`, configuración personal del IDE y `local.properties`.
-
-El enunciado también solicita un **video de 3–5 minutos** que muestre el flujo completo y un **documento técnico de 1–2 páginas** con justificación de arquitectura, esquema de datos, persistencia y validaciones. Esos entregables se preparan por separado; este README no los sustituye.

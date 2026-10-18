@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="24dp" android:fillViewport="true">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tvTituloFormularioGasto" android:text="Añadir gasto" android:textSize="28sp" android:textStyle="bold" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Descripción" android:labelFor="@id/etDescripcionGasto" android:textSize="16sp" />
+    <EditText android:id="@+id/etDescripcionGasto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="Ej. Almuerzo" android:inputType="textCapSentences" android:textColorHint="?attr/colorOnSurfaceVariant" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Monto ($)" android:labelFor="@id/etMontoGasto" android:textSize="16sp" />
+    <EditText android:id="@+id/etMontoGasto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="Ej. 12500 o 12500,50" android:inputType="numberDecimal" android:textColorHint="?attr/colorOnSurfaceVariant" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Categoría" android:labelFor="@id/spCategoriaGasto" android:textSize="16sp" />
+    <Spinner android:id="@+id/spCategoriaGasto" android:layout_width="match_parent" android:layout_height="48dp" android:spinnerMode="dropdown" />
+    <TextView android:id="@+id/tvErrorCategoria" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textStyle="bold" android:visibility="gone" android:accessibilityLiveRegion="polite" />
+    <Button android:id="@+id/btnFechaGasto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="16dp" android:text="Seleccionar fecha" />
+    <Button android:id="@+id/btnGuardarGasto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="24dp" android:text="Guardar gasto" />
+    <Button android:id="@+id/btnCancelarGasto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Cancelar" />
+  </LinearLayout>
+</androidx.core.widget.NestedScrollView>

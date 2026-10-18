@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="24dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Mis gastos" android:textSize="28sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tvBienvenida" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textSize="18sp" />
+    <Button android:id="@+id/btnAnadirGasto" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="12dp"
+        android:minHeight="48dp" android:text="Añadir gasto" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvGastos"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:contentDescription="Lista de gastos" />
+        <TextView android:id="@+id/tvGastosVacios" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center"
+            android:text="Aún no has añadido gastos." android:textSize="18sp" />
+    </FrameLayout>
+    <Button android:id="@+id/btnCerrarSesion" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:minHeight="48dp" android:text="Cerrar sesión" />
+</LinearLayout>
